@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EBAY Automation]">
+  <listeners>
+    <listener class-name="ExtentReportListener.Extentreportlistener"/>
+  </listeners>
+  <test name="Ebay Application test">
+    <classes>
+      <class name="Testcases.Signintest"/>
+      <class name="Testcases.Logintest"/>
+    </classes>
+  </test> <!-- Ebay Application test -->
+  <test name="Ebay Application test(failed)">
+    <classes>
+      <class name="Testcases.Logintest">
+        <methods>
+          <include name="setup"/>
+          <include name="logintest"/>
+        </methods>
+      </class> <!-- Testcases.Logintest -->
+      <class name="Testcases.Signintest">
+        <methods>
+          <include name="setup"/>
+          <include name="register" invocation-numbers="1"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Testcases.Signintest -->
+    </classes>
+  </test> <!-- Ebay Application test(failed) -->
+</suite> <!-- Failed suite [EBAY Automation] -->

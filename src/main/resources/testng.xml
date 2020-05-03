@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EBAY Automation">
+
+<listeners>
+    <listener class-name="ExtentReportListener.Extentreportlistener" />
+  </listeners>
+  
+  <test name="Ebay Application test">
+    <classes>
+      <class name="Testcases.Signintest"></class>
+      <class name="Testcases.Logintest"></class>
+ 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

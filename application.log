@@ -1,0 +1,5 @@
+2020-05-02 05:58:45,022  INFO [main] Signintest:31 - launching chrome
+2020-05-02 05:58:45,032  INFO [main] Signintest:32 - appn url
+2020-05-02 05:58:45,033  WARN [main] Signintest:33 - it's a warning message
+2020-05-02 05:58:45,033 FATAL [main] Signintest:34 - this is fatal error
+2020-05-02 05:58:45,034 ERROR [main] Signintest:35 - it's a bug
